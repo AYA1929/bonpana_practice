@@ -1,0 +1,103 @@
+/* すべてのページに適用される設定 */
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 0 0 0;
+}
+p, li, td {
+    line-height: 1.7;
+}
+a:link {
+    color: #eb9b34;
+    text-decoration: none;
+}
+a:visited {
+    color: #eb9b34;
+    text-decoration: none;
+}
+a:hover {
+    color: #eb9b34;
+    text-decoration: none;
+}
+a:active {
+    color: #eb9b34;
+    text-decoration: none;
+}
+/* すべてのページに適用　- ヘッダー */
+.nav ul {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.nav a:link {
+    color: #eb9b34;
+}
+.nav a:visited {
+    color: #eb9b34;
+}
+.nav a:hover {
+    text-decoration: none;
+}
+.nav a:active {
+    text-decoration: none;
+}
+
+/* すべてのページに適用 - ヒーロー */
+
+/* すべてのページに適用 - メイン */
+main {
+    margin: 90px auto 90px auto;
+    max-width: 1000px;
+}
+main h2 {
+    margin: 60px 0 20px 0;
+    border-bottom: 2px solid #197031;
+    padding: 0 0 5px 0;
+    color: #197031;
+    font-size: 1.3rem;
+}
+
+/* すべてのページに適用 - フッター */
+.copyright {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #197031;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* 個別のスタイル */
+/* index.html */
+.shop-info {
+    border-collapse: collapse;
+}
+.shop-info th, .shop-info td {
+    border: 1px solid #DBDBDB;
+    padding: 20px;
+}
+.shop-info th {
+    width: 112px;
+    text-align: left;
+    vertical-align: top;
+}
+/* モバイル対応 */
+@media (max-width: 767px) {
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    main {
+        padding: 0 4%;
+    }
+}
